@@ -45,49 +45,7 @@ Build a small React Native (Expo) app backed by Supabase with the following:
 3. A user reports "my items disappeared." Walk through how you'd debug this in production (what logs/tools, in what order).
 4. When would you choose an Edge Function over doing the work client-side?
 ---
- 
-## Evaluation Rubric (internal — don't send to candidates)
- 
-Score each 0–3: 0 = missing/broken, 1 = attempted but flawed, 2 = solid, 3 = excellent.
- 
-| Area | What to look for | Weight |
-|---|---|---|
-| App runs from README alone | `npx expo start` works following their steps, no missing env explanation | x2 |
-| Auth correctness | Session persists, errors handled, no crash on bad input | x2 |
-| RLS actually works | Check their SQL: policies scoped to `auth.uid()`. Try reading another user's row from the dashboard | x3 |
-| CRUD + state management | No stale UI after mutations, loading/error states exist | x2 |
-| Chosen "real-world" feature | Actually works, not just scaffolded | x2 |
-| Code structure & TypeScript | Typed properly (not `any` everywhere), logical separation | x2 |
-| README & trade-offs | Honest about shortcuts; shows judgement | x1 |
-| Written answers | Q1 is the key filter — anyone who says "the anon key is secret" or doesn't mention RLS fails it | x2 |
- 
-**Rough bar:** 
-- Hire-track: ≥ 70% of max score AND RLS scored 2+
-- Instant concerns: committed secrets, RLS missing/wrong, app doesn't run
-### Red flags
-- Service role key in the repo or in the app code
-- No RLS, or RLS policies that allow `true` for everything
-- README copied boilerplate with no project-specific setup
-- Everything in one 800-line `App.tsx`
-- Perfect code but can't explain it live (see Part 3)
----
- 
+
+#Using Claude/Copilot during the take-home is fine
 ## Part 3 — 30-Minute Live Follow-Up (screen share)
- 
-This is your AI-slop filter. Anyone can submit polished code in 2026; the question is whether they understand it.
- 
-1. **"Open your project and add X live"** — small change, e.g., "add a filter to show only pending items." Watch how they navigate their own code. (10 min)
-2. **"Why did you do it this way?"** — pick one non-obvious decision from their code and ask them to defend it. (5 min)
-3. **Break something** — ask them to intentionally break RLS and show what happens in the app, then fix it. (10 min)
-4. **Their questions** — good candidates ask about the codebase, deploy process, or how you review PRs. (5 min)
-Using Claude/Copilot during the take-home is fine (say so upfront — it's realistic). The live session is where you separate "used AI as a tool" from "AI did it, they can't drive."
- 
----
- 
-## Optional: Senior-Level Add-On
- 
-If hiring for a senior/lead role, add ONE of these to the take-home:
- 
-- **EAS + OTA:** set up EAS Update with a `preview` channel and document the release flow
-- **Native module touch:** integrate one config-plugin-requiring library (e.g., notifications) and explain the prebuild implications
-- **Migration scenario (written):** "The items table needs a new required column with 50k existing rows in production. Write the migration plan — zero downtime."
+When you submit the test we will have a live follow-up about what you did.
