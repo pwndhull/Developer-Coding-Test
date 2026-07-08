@@ -2,7 +2,7 @@
  
 **Role:** React Native / Mobile Developer
 **Time expected:** 3–4 hours (hard cap: submit whatever you have at 5 hours)
-**Submission:** GitHub repo link (public or invite `<your-github-username>`) + a short Loom/video walkthrough (optional but a plus)
+**Submission:** GitHub repo link (public or invite `<pwndhull>`) + a short Loom/video walkthrough (optional but a plus)
  
 ---
  
